@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
-import { BrowserRouter as Router, Routes, Route , RouterProvider, BrowserRouter} from 'react-router-dom';
+import { BrowserRouter as  Routes, Route , BrowserRouter} from 'react-router-dom';
 import Checkout from './pages/Checkout';
 import About from './pages/About';
 import Login from './pages/Login';
