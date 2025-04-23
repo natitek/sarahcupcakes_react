@@ -27,7 +27,11 @@ const Header: React.FC<Props> = ({ itemCount }) => {
     <header className="header">
       {/* Logo */}
       <div className="logo">
-        <img src={SarahLogo} className="sarahLogo" />
+        <img src={SarahLogo} className="sarahLogo"
+         onClick={() => navigate('/')}
+          style={{ cursor: 'pointer' }}
+         
+        />
       </div>
 
       {/* Right-side icons */}
