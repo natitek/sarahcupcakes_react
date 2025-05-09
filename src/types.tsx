@@ -22,8 +22,11 @@ type CupcakeProps = {
     base: flavor;
     icing: string;
     color: color;
-    
-    decoration : boolean;
+
+    decoration ?: boolean;
 
 
 }
+
+let testcupcake : CupcakeProps = {base:"Lemon",icing:"good",color:"blue"}
+console.log(testcupcake.base);
