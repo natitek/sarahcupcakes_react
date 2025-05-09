@@ -1,17 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import App from './App.tsx'
 
+// import Header from './components/Header.tsx';
+import { BrowserRouter } from 'react-router-dom';
 
-
-import { BrowserRouter as  BrowserRouter,Routes, Route} from 'react-router-dom';
-
-
-import Checkout from './pages/Checkout';
-import About from './pages/About';
-import Login from './pages/Login';
-import Custom from './pages/Custom';
-
-import Header from './Header.tsx'
 
 
 
@@ -19,22 +12,13 @@ import Header from './Header.tsx'
 
 createRoot(document.getElementById('root')!).render(
 
-  
-  <StrictMode>
-    <BrowserRouter>
+  <StrictMode>  
     
-  <Header itemCount={2} />
+    <BrowserRouter>
+      <App />
 
-
-<Routes>
-<Route path="/Checkout" element={<Checkout />} />
-<Route path="/About" element={<About />} />
-<Route path="/Login" element={<Login />} />
-<Route path="/Custom" element={<Custom />} />
-
-</Routes>
-
-</BrowserRouter>
+    </BrowserRouter>
+  
 
   </StrictMode>,
 )

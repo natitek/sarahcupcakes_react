@@ -9,11 +9,13 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-import SarahLogo from './assets/Sarah Logo.svg'
+
+import SarahLogo from '../assets/Sarah Logo.svg'
 
 type Props = {
   itemCount: number;
 };
+
 
 
 const Header: React.FC<Props> = ({ itemCount }) => {
