@@ -4,24 +4,14 @@ import './Header.css'; // Make sure to import the CSS
 
 import { useNavigate } from 'react-router-dom';
 
-
-
-
-
-
-
 import SarahLogo from '../assets/Sarah Logo.svg'
 
 type Props = {
   itemCount: number;
 };
 
-
-
 const Header: React.FC<Props> = ({ itemCount }) => {
  
-
-
   const navigate = useNavigate();
 
   return (

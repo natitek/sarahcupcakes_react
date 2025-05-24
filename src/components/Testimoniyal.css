@@ -1,0 +1,35 @@
+.review-section {
+    margin-top: 3rem;
+    text-align: left;
+  }
+  
+  .review-section h2 {
+    margin-bottom: 1rem;
+    color: #5d3a3a;
+  }
+  
+  .reviews-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+  }
+  
+  .reviews-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  
+  .review-card {
+    flex: 0 0 auto;
+    min-width: 250px;
+    background-color: #fff0ed;
+    color: #5d3a3a;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
