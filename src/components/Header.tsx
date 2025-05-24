@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingCart, User} from 'lucide-react';
+import { ShoppingCart, User,CakeIcon} from 'lucide-react';
 import './Header.css'; // Make sure to import the CSS
 
 import { useNavigate } from 'react-router-dom';
@@ -28,19 +28,31 @@ const Header: React.FC<Props> = ({ itemCount }) => {
 
       {/* Right-side icons */}
       <div className="icons">
+        <div className="icon-with-tooltip">
+         <CakeIcon
+          className="icon"
+          onClick={() => navigate('/Custom')} // Navigate to custom Page
+          style={{ cursor: 'pointer' }}
+        />
+        <span className='tooltip-text'>Customize Cake</span>
+        </div>
+<div className="icon-with-tooltip">
         <User
           className="icon"
           onClick={() => navigate('/Login')} // Navigate to login
           style={{ cursor: 'pointer' }}
         />
+        <span className='tooltip-text'>Login</span>
+        </div>
 
         <div
-          className="cart-container"
+          className="cart-container icon-with-tooltip"
           onClick={() => navigate('/Checkout')} // Navigate to checkout
           style={{ cursor: 'pointer' }}
         >
           <ShoppingCart className="icon" />
           {itemCount > 0 && <span className="badge">{itemCount}</span>}
+          <span className='tooltip-text'>Checkout</span>
         </div>
       </div>
     </header>

@@ -1,0 +1,44 @@
+.customize-page {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff8f6;
+  color: #5d3a3a;
+}
+
+.cupcake-preview {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+}
+
+.cupcake-preview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.options div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.options label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
